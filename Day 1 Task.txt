@@ -1,0 +1,53 @@
+1. Write a blog on Difference between HTTP1.1 vs HTTP2
+
+HTTP stands for Hypertext Transfer Protocol. It is the foundation of the World Wide Web and is used by browsers to load web pages.
+
+HTTP1.1
+
+=> Version 1.1 was released in 1997 and became the Internet Standard. 
+=> This version added many performance enhancements, including keepalive connections, caching mechanisms, request pipelining, transfer encodings, and byte-range requests.
+=> It works on the textual format.	
+=> There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources.	
+=> It uses requests resource Inlining for use getting multiple pages	
+=> It compresses data by itself.	
+
+
+HTTP2
+
+=> Released in February 2015 by the Internet Engineering Task Force (IETF) focussed on improving HTTP performance.
+=> It works on the binary protocol.
+=> It allows multiplexing so one TCP connection is required for multiple requests.
+=> It uses PUSH frame by server that collects all multiple pages 
+=> It uses HPACK for data compression.
+
+-------------------------------------------------------------
+
+2. Write a blog about objects and its internal representation in Javascript
+
+A JavaScript object is a collection of named values having state and behavior (properties and method).
+
+For example: Person, car, pen, bike, Personal Computer , Washing Machine etc.
+
+Syntax:
+var car = "Mercedes";
+
+Objects are variables too. But objects can contain many values.
+
+The following code assigns many values (Mercedes, C-class, White and soo on) to a variable named Car:
+
+var car = {
+Make: “Mercedes”, 
+Model: “C-Class”, 
+Color: “White”, 
+Fuel: Diesel, 
+Weight: “850kg”, 
+Mileage: “8Kmpl”, 
+Rating: 4.5
+};
+
+Ex: To print the above object
+
+console.log(car.Make); // print the make of car
+
+o/p:
+Mercedes
